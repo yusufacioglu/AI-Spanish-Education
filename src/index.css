@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Bento Grid Theme Global Skin Overrides */
+html, body {
+  background-color: #020617 !important; /* bg-slate-950 */
+  color: #e2e8f0 !important; /* text-slate-200 */
+}
+
+#app-root {
+  background-color: #020617 !important; /* bg-slate-950 */
+  color: #e2e8f0 !important; /* text-slate-200 */
+  min-height: 100vh;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* White background cards -> Slate-900 Bento panels */
+#app-root .bg-white,
+#app-root .bg-slate-50,
+#app-root .bg-slate-50\/50,
+#app-root .bg-indigo-50,
+#app-root .bg-indigo-50\/50,
+#app-root .bg-slate-100 {
+  background-color: #0f172a !important; /* bg-slate-900 */
+  color: #f1f5f9 !important; /* text-slate-100 */
+}
+
+/* Inner panels default colors */
+#app-root .bg-white {
+  background-color: #0f172a !important;
+}
+
+/* Special accents and containers */
+#app-root .border,
+#app-root .border-b,
+#app-root .border-t,
+#app-root .border-r,
+#app-root .border-l,
+#app-root .border-slate-100,
+#app-root .border-slate-150,
+#app-root .border-slate-200,
+#app-root .border-indigo-100,
+#app-root .border-indigo-200,
+#app-root .border-slate-300 {
+  border-color: #1e293b !important; /* border-slate-800 */
+}
+
+/* Heading/Text color overrides */
+#app-root .text-slate-900,
+#app-root .text-slate-800,
+#app-root .text-slate-700,
+#app-root .text-indigo-950 {
+  color: #f8fafc !important; /* text-slate-50 */
+}
+
+#app-root .text-slate-600,
+#app-root .text-slate-500,
+#app-root .text-slate-400 {
+  color: #94a3b8 !important; /* text-slate-400 */
+}
+
+/* Light button states, inputs, select controls */
+#app-root input,
+#app-root textarea,
+#app-root select {
+  background-color: #020617 !important; /* bg-slate-950 */
+  border-color: #1e293b !important; /* border-slate-800 */
+  color: #f1f5f9 !important; /* text-slate-100 */
+}
+
+#app-root input:focus,
+#app-root textarea:focus,
+#app-root select:focus {
+  border-color: #ef4444 !important; /* border-red-500 accent */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2) !important;
+}
+
+/* Hover scales and modern shadow enhancements */
+#app-root .shadow-sm,
+#app-root .shadow,
+#app-root .shadow-md,
+#app-root .shadow-lg,
+#app-root .shadow-xl,
+#app-root .shadow-2xl {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Rounded corners - bento grids need generous rounded-2xl or rounded-3xl */
+#app-root .rounded-xl {
+  border-radius: 1rem !important; /* rounded-2xl equivalent */
+}
+#app-root .rounded-2xl {
+  border-radius: 1rem !important; /* rounded-2xl */
+}
+#app-root .rounded-3xl {
+  border-radius: 1.5rem !important; /* rounded-3xl */
+}
+
+/* Alert notifications inside App */
+#app-root .bg-indigo-50 {
+  background-color: #1e1b4b !important; /* bg-indigo-950 */
+  border-color: #312e81 !important; /* border-indigo-900 */
+  color: #e0e7ff !important; /* text-indigo-200 */
+}
+
+/* Transition animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

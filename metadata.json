@@ -1,0 +1,6 @@
+{
+  "name": "AI İspanyolca Öğrenme Sistemi",
+  "description": "CEFR uyumlu, DELE ve YDS koçluğu içeren, Türkçe açıklamalı ve TTS seslendirmeli gelişmiş adaptif İspanyolca öğrenme platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
